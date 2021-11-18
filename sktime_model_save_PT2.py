@@ -12,9 +12,7 @@ from sktime.datatypes._panel._convert import (
     is_nested_dataframe,
 )
 
-#from sktime.classification.compose import ColumnEnsembleClassifier                 <---- MULTIVARIATE SO NOT NEEDED
-#from sktime.classification.dictionary_based import BOSSEnsemble                    <---- MULTIVARIATE SO NOT NEEDED
-from sktime.classification.dictionary_based import IndividualBOSS
+
 from sktime.classification.dictionary_based import ContractableBOSS
 from sktime.classification.dictionary_based import MUSE
 from sktime.classification.dictionary_based import IndividualTDE
@@ -26,22 +24,22 @@ from sktime.classification.distance_based import ProximityStump
 from sktime.classification.distance_based import ProximityTree
 from sktime.classification.distance_based import ShapeDTW
 from sktime.classification.distance_based import KNeighborsTimeSeriesClassifier
-#from sktime.classification.feature_based import Catch22Classifier                  <---- MULTIVARIATE SO NOT NEEDED
+
 from sktime.classification.feature_based import MatrixProfileClassifier
 from sktime.classification.feature_based import SignatureClassifier
 from sktime.classification.feature_based import TSFreshClassifier
-#from sktime.classification.hybrid import Catch22ForestClassifier                   <---- For some reason this one doesn't work? Or, rather, gives me an error
+
 from sktime.classification.hybrid import HIVECOTEV1
 from sktime.classification.hybrid import HIVECOTEV2
 from sktime.classification.interval_based import CanonicalIntervalForest
 from sktime.classification.interval_based import DrCIF
 from sktime.classification.interval_based import RandomIntervalSpectralForest
 from sktime.classification.interval_based import SupervisedTimeSeriesForest
-#from sktime.classification.interval_based import TimeSeriesForestClassifier        <---- MULTIVARIATE SO NOT NEEDED
+
 from sktime.classification.kernel_based import Arsenal
 from sktime.classification.kernel_based import ROCKETClassifier
 from sktime.classification.shapelet_based import ShapeletTransformClassifier
-#from sktime.classification.shapelet_based import MrSEQLClassifier                  <---- MULTIVARIATE SO NOT NEEDED
+
 
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
